@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Story Writing</title>
+    <link rel="stylesheet" type="text/css" href="add_story.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Write Your Story</h1>
+      </header>
+      <div class="form-container">
+        <form method="POST" action="add_story.php">
+          <label for="story-title">Title:</label>
+          <input type="text" id="story-title" name="story-title" required><br><br>
+          <label for="story-text">Story:</label>
+          <textarea id="story-text" name="story-text" required></textarea><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="comment-container">
+        <h2>Comments</h2>
+        <ul id="comments">
+          <li class="comment">
+            <h3>User1:</h3>
+            <p>This is a great story!</p>
+          </li>
+          <li class="comment">
+            <h3>User2:</h3>
+            <p>I really enjoyed reading this.</p>
+          </li>
+        </ul>
+        <form id="comment-form">
+          <h3>Add a Comment</h3>
+          <label for="comment-text">Comment:</label>
+          <textarea id="comment-text" name="comment-text" required></textarea><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
